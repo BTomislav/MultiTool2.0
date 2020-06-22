@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConverterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layoutDirection="ltr"
+            android:text="ANIMATE"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/custom_swap"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/spinner3"
+            android:layout_weight="0.7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <FrameLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:background="@color/transparent">
+
+            <androidx.constraintlayout.motion.widget.MotionLayout
+                android:id="@+id/constraintLayout6"
+                android:background="@drawable/custom_motionbkg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:layoutDescription="@xml/activity_converter_xml_constraintlayout6_scene">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/custom_spinner"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:spinnerMode="dialog"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toStartOf="@+id/button3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/custom_swap"
+                    android:gravity="center"
+                    android:text="⇆"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/custom_spinner"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:spinnerMode="dialog"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toEndOf="@+id/button3"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.motion.widget.MotionLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
