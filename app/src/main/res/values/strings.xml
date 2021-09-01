@@ -15,25 +15,75 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
-    <string-array name="planets_array">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>dadsadadadadadada</item>
-    </string-array>
 
     <string-array name="category">
-        <item>Weight ⚖</item>
-        <item>k</item>
-        <item>dsa</item>
-        <item>Temperfffdasdasature</item>
-        <item>Temperatdasaure</item>
+        <item>Temperature</item>
+        <item>Length</item>
+        <item>Currency</item>
+        <item>Weight</item>
+        <item>Speed</item>
+        <item>Time</item>
+    </string-array>
 
+    <string-array name="temperature">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
 
+    <string-array name="length">
+        <item>Meter</item>
+        <item>Kilometer</item>
+        <item>Centimeter</item>
+        <item>Millimeter</item>
+        <item>Micrometer</item>
+        <item>Nanometer</item>
+        <item>Inch</item>
+        <item>Yard</item>
+        <item>Mile</item>
+        <item>Foot</item>
+    </string-array>
+
+    <string-array name="currency">
+        <item>EUR</item>
+        <item>USD</item>
+        <item>GBP</item>
+        <item>CAD</item>
+        <item>AUD</item>
+        <item>AUD</item>
+        <item>HRK</item>
+        <item>JPY</item>
+        <item>CHF</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>Kilogram</item>
+        <item>Gram</item>
+        <item>Milligram</item>
+        <item>Tonne</item>
+        <item>Pound</item>
+        <item>Ounce</item>
+        <item>Stone</item>
+    </string-array>
+
+    <string-array name="speed">
+        <item>km/h</item>
+        <item>m/s</item>
+        <item>ft/s</item>
+        <item>mph</item>
+        <item>knot</item>
+        <item>jard/s</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>Seconds</item>
+        <item>Milliseconds</item>
+        <item>Minutes</item>
+        <item>Hours</item>
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item>
+        <item>Years</item>
     </string-array>
 
 </resources>
